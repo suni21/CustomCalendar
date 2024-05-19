@@ -8,13 +8,19 @@
 5. Responsive design for various screen sizes.
 
 # Screenshots
-![Alt text](MonthNdYearChange.png) ![Alt text](addEventSS.png) ![Alt text](all.png) ![Alt text](<Calendar with events (Front-end).png>) ![Alt text](currentDateHighlight.png) ![Alt text](detailsOfEventSS.png) ![Alt text](events.png)
+![Alt text](<Calendar with events (Front-end).png>) 
+![Alt text](MonthNdYearChange.png) 
+![Alt text](currentDateHighlight.png) 
+![Alt text](addEventSS.png) 
+![Alt text](all.png) 
+![Alt text](detailsOfEventSS.png) 
+![Alt text](events.png)
 
 # Customization
-The Calendar Component is highly customizable. You can adjust the styling using Tailwind CSS classes or modify the component's behavior by tweaking the props passed to it.
+The Calendar Component is highly customizable. You can adjust the styling using Tailwind CSS classes or modify the component's behavior.
 
 # Integration with Day.js
-Day.js is integrated into the Calendar Component for robust time zone handling and date formatting. You can leverage Day.js functions directly in your application to manipulate dates as needed.
+Day.js is integrated into the Calendar Component for robust time zone handling and date formatting. 
 
 # Contributors
 Suniti - Developer
