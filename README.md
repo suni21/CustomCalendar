@@ -1,5 +1,8 @@
 # CustomCalendar
 
+# Introduction
+Welcome to my Calendar Component! This component is designed to provide a user-friendly and customizable calendar interface for React applications. It comes with features such as adding events, pop-up event details, Tailwind CSS styling, and integration with Day.js for robust time handling.
+
 # Features
 1. Display a monthly calendar grid with customizable event markers.
 2. Add events with ease.
