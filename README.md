@@ -19,6 +19,22 @@ Welcome to my Calendar Component! This component is designed to provide a user-f
 ![Alt text](detailsOfEventSS.png) 
 ![Alt text](events.png)
 
+# Installation
+To install Custom Calendar in your project, use npm:
+
+npm install custom-calendar
+
+# Development
+npm install
+npm start
+
+# Example:
+http://localhost:3000/
+
+# Website URL:
+
+
+
 # Customization
 The Calendar Component is highly customizable. You can adjust the styling using Tailwind CSS classes or modify the component's behavior.
 
