@@ -1,0 +1,36 @@
+import CalendarHeader from './components/CalendarHeader';
+import CalendarDays from './components/CalendarDays';
+import CalendarCells from './components/CalendarCells';
+import EventModal from './components/EventModal';
+import AddEventModal from './components/AddEventModal';
+
+
+  const handleInputChange = e => {
+    const { name, value } = e.target;
+    setNewEvent(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+   const deleteEvent = () => {
+    setEvents(prevEvents => prevEvents.filter(event => event.id !== selectedEvent.id));
+    closeModal();
+  };
+
+  const checkRecurringEvent = (event, day) => {
+    if (!event.recurring) return false;
+    const eventDate = parseISO(event.date);
+    switch (event.recurring) {
+      case 'daily':
+        return isAfter(day, eventDate) || isSameDay(day, eventDate);
+      case 'weekly':
+        return getDay(day) === getDay(eventDate) && (isAfter(day, eventDate) || isSameDay(day, eventDate));
+      case 'monthly':
+        return day.getDate() === eventDate.getDate() && (isAfter(day, eventDate) || isSameDay(day, eventDate));
+      case 'yearly':
+        return day.getDate() === eventDate.getDate() && day.getMonth() === eventDate.getMonth() && (isAfter(day, eventDate) || isSameDay(day, eventDate));
+      default:
+        return false;
+    }
+  };
